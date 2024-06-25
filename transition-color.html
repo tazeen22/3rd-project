@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Changing Image</title>
+  <style>
+    @keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.color-changing-image {
+  width: 300px; 
+  height: 300px; 
+  animation: colorChange 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+  </style>
+
+</head>
+<body>
+  <img src="images/paris.jpg" alt="Color Changing" class="color-changing-image">
+</body>
+</html>
