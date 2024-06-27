@@ -628,6 +628,10 @@ strong {
    border-bottom: 2px solid white;
 }
 
+video{
+   width: 100%;
+}
+
 
 }
 @media (max-width: 706px) and(min-width:460px) {
@@ -655,6 +659,9 @@ strong {
       justify-content: center;
 
    }
+   video{
+      width: 100%;
+   }
 
    .imgbox img {
       border-radius: 30px;
@@ -669,6 +676,9 @@ strong {
       display: none;
    }
 
+     video{
+      width: 100%;
+     }
    
 .contentbox {
    width: 100%;
@@ -697,6 +707,10 @@ strong {
       transition: .2s;
 
    }
+
+   video{
+      width: 100%;
+   }
 }
 
 @media (max-width: 600px){
@@ -706,6 +720,9 @@ strong {
       height: 339px;
       margin: 5%;
   }
+  video{
+   width: 100%;
+}
   }
 
 
@@ -735,6 +752,9 @@ strong {
 
    .home-text h1 {
       font-size: 40px;
+   }
+   video{
+      width: 100%;
    }
 }
 
