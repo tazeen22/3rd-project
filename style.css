@@ -81,7 +81,7 @@ section {
 .home {
    min-height: 100vh;
    width: 100%;
-   background-image: url(images/background.jpg);
+   background-image: url(images/walpaper.jpg);
    background-position: center;
    background-size: cover;
    position: relative;
@@ -91,13 +91,14 @@ section {
 }
 
 .home-text h1 {
-   font-size: var(--big-font);
-   line-height: 1.2;
-   width: 70%;
-   color: var(--bg-color);
+   font-size: 70px;
+   /* line-height: 1.2; */
+   /* width: 80%; */
+   margin-top: 3rem;
+   color: wheat;
    font-family: 'Paytone One', sans-serif;
    letter-spacing: 2px;
-   /* text-align: center; */
+   text-align: center;
    margin-bottom: 10px;
 }
 
@@ -223,6 +224,59 @@ section {
    top: 36px;
    right: 40px;
 }
+
+
+
+/*------------------------------------------ video ------------------------------------ */
+/* Hide the checkbox input */
+.modal-toggle {
+   display: none;
+}
+
+/* Style for the modal */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+   align-items: center;
+   justify-content: center;
+}
+
+.modal-content {
+   position: relative;
+   margin: auto;
+   padding: 0;
+   width: 80%;
+   max-width: 800px;
+}
+
+.close {
+   color: white;
+   position: absolute;
+   top: 10px;
+   right: 25px;
+   font-size: 35px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: #999;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* Show modal when the checkbox is checked */
+.modal-toggle:checked + .modal {
+   display: flex;
+}
+
 
 .dest-content {
    display: flex;
@@ -375,6 +429,7 @@ section {
     color: darkgray;
     font-weight: 500;
     font-size: 18px; 
+    text-align: center;
 }
 
 strong {
@@ -383,12 +438,12 @@ strong {
    border-bottom: 2px solid white;
 }
 button{
-   width: 31%;
+   width: 32%;
    height: 52px;
    border-radius: 20px;
    text-transform: capitalize;
    margin-top: 17px;
-   font-size: 20px;
+   font-size: 15px;
    color: white;
    background-color: #749be1ed;
    cursor: pointer;
@@ -399,6 +454,26 @@ button:hover{
    color:#749be1ed ;
    cursor: pointer;
 }
+
+.read-more-btn {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+   color: #fff;
+   background-color: #4a90e2;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   text-align: center;
+   transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+   background-color: #3b7cd4;
+}
+
 
  
 .imgbox img{
