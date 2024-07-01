@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Text Color</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0; /* Fallback background color */
+    }
+
+    
+    .gradient-text {
+    background: linear-gradient(to right, skyblue, darkblue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow opacity as needed */
+    font-size: 36px; /* Adjust as needed */
+    font-weight: bold; /* Adjust as needed */
+}
+
+
+  
+
+    .gradient-text::before {
+      content: attr(data-text); /* Use attribute to keep original text */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #4F8FD6, #8A2BE2); /* Blue to Purple gradient */
+      background-clip: text;
+      -webkit-background-clip: text; /* For Safari */
+      text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-text" data-text="Awesome Text">Awesome Text</div>
+</body>
+</html>
