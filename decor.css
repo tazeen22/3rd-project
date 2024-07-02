@@ -377,11 +377,9 @@ section.newsletter {
    display: none;
  }
 
- img.Paris {
-   margin-bottom: 60px;
-   height: 372px;
-   width: 100%;
-}
+
+
+   
  
  .thum:hover {
     filter: brightness(100%) hue-rotate(45deg);
@@ -780,7 +778,7 @@ section.newsletter {
  
  @media (max-width: 480px) {
  
- 
+  
     video {
        width: 100%;
     }
@@ -820,11 +818,7 @@ section.newsletter {
  
 
  
- @media (max-width: 706px){
-   .boxparis{
-      display: block;
-   }
- }
+ 
  @media (max-width: 600px) {
     .imgbox img {
        border-radius: 30px;
@@ -840,7 +834,7 @@ section.newsletter {
     .home {
       min-height: 100vh;
       width: 100%;
-      background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.3)),url(images/background.jpg)no-repeat;
+      background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.3)),url(images/mlev4ob8jhsmgmdq9cqn.webp)no-repeat;
       /* background-image: url(images/background.jpg ); */
       background-position: center;
       background-size: cover;
@@ -884,9 +878,19 @@ section.newsletter {
     }
  
     .home {
-       /* height: 145vh; */
+       
        transition: .5s;
-    }
+         min-height: 100vh;
+         width: 100%;
+         background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.3)),url(images/background.jpg)no-repeat;
+         background-position: center;
+         background-size: cover;
+         position: relative;
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         align-items: center;
+      }
+ 
  
     .home-text h1 {
        font-size: 40px;
