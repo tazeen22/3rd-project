@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+ nav {
+    position: fixed;
+    width: 100vw;
+    padding: 1rem;
+    /* height: auto; */
+    z-index: 1;
+    display: flex;
+    background: rgb(85 85 85 / 70%);
+    justify-content: space-between;
+ 
+ 
+ }
+ 
+ .logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--bg-color);
+ 
+ }
+ 
+ .navbar {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .navbar a {
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+ }
+ 
+ .navbar a:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+ }
+ 
+ .menu-icon {
+    display: none;
+    position: relative;
+    bottom: 45px;
+    font-size: 32px;
+    cursor: pointer;
+    color: antiquewhite;
+ }
+ 
+ 
+ @media (max-width: 768px) {
+
+  
+ 
+ nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+ }
+
+ .logo {
+    text-align: center;
+ }
+    .menu-icon {
+       display: block;
+    }
+ 
+    .navbar {
+       display: none;
+       flex-direction: column;
+       position: absolute;
+       top: 60px;
+       right: 20px;
+      background-image: url(images/aesthetic.jpg);
+       padding: 10px;
+       width: 200px;
+    }
+ 
+    .navbar li {
+       margin: 10px 0;
+    }
+ 
+    #menu-toggle:checked+.menu-icon+.navbar {
+       display: contents;
+       text-align: center;
+    }
+ 
+ 
+ }
+ 
+ input#menu-toggle {
+    display: none;
+ }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">DREAM PALACE</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#package">Book</a></li>
+          <li><a href="#destination">Testimonials</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+   
+</body>
+</html>
