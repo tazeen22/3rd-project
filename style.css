@@ -330,10 +330,11 @@ section {
 
 .dest-content {
    display: flex;
-   flex-wrap: wrap;
-   align-items: center;
+   /* flex-wrap: wrap; */
+  
    justify-content: space-between;
    padding-top: 24px;
+   flex-direction: column;
 }
 
 .stars i {
@@ -349,6 +350,7 @@ section {
 
 .location p {
    font-size: 15px;
+   text-align: center;
    color: var(--second-color);
 }
 
