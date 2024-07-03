@@ -6,7 +6,6 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    /* outline: 5px solid; */
  }
  
  :root {
@@ -927,14 +926,14 @@ section.newsletter {
    .modal {
       width: 100vw;}
       .box{
-         width: 100vw;
+         width: 96vw;
       }
       .col-content img {
          width: 90vw;}
          .newsletter form input:first-child {
-            width: 90vw;}
+            width: 80vw;}
             .newsletter form input:last-child {
-                 right:65px}
+               display: none;}
                  .col-content {
                   width: 90vw;}
                   .thum img {
@@ -942,3 +941,6 @@ section.newsletter {
  }
 
  }
+
+ @media (max-width:300px){.newsletter form input:first-child {
+   display: none;}}
