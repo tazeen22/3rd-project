@@ -186,7 +186,7 @@
  
  .row-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(375px, auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
@@ -262,7 +262,7 @@ section.newsletter {
  
  .package-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+   grid-template-columns: repeat(auto-fit, minmax(500px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 5rem;
@@ -484,7 +484,7 @@ section.newsletter {
     gap: 3rem;
     justify-content: center;
     align-items: center;
- 
+    flex-direction: column;
     width: 100%;
  }
  
