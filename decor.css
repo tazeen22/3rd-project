@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    /* outline: 5px solid; */
  }
  
  :root {
@@ -28,7 +29,7 @@
  
  header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     padding: 1rem;
     /* height: auto; */
     z-index: 1;
@@ -862,7 +863,7 @@ section.newsletter {
       gap: 3em;
   }
     .newsletter form {
-       width: 350px;
+       width: 296px;
     }
  
     :root {
@@ -922,3 +923,22 @@ section.newsletter {
     }
  }
 
+ @media (max-width:485px){
+   .modal {
+      width: 100vw;}
+      .box{
+         width: 100vw;
+      }
+      .col-content img {
+         width: 90vw;}
+         .newsletter form input:first-child {
+            width: 90vw;}
+            .newsletter form input:last-child {
+                 right:65px}
+                 .col-content {
+                  width: 90vw;}
+                  .thum img {
+                     width: 83vw;
+ }
+
+ }
