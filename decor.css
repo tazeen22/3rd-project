@@ -186,7 +186,7 @@
  
  .row-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(268px, auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
@@ -634,7 +634,7 @@ section.newsletter {
  }
  
  .footer {
-    padding: 20px 0;
+    padding:  0;
     background:transparent;
     
  }
@@ -921,3 +921,4 @@ section.newsletter {
        transform: translateY(0);
     }
  }
+
